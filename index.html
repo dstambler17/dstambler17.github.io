@@ -1,0 +1,218 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dan Stambler</title>
+    <link rel="shortcut icon" href="worldMapFlavicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel = "stylesheet" type = "text/css" href = "style.css"/>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
+  </head>
+
+  <body>
+  <nav class="navbar is-fixed-top is-transparent has-no-background">
+    <div class="navbar-brand">
+      <a id ="title" class="navbar-item" href="">
+        <h1 class = "title headingText">Daniel Stambler</h1>
+      </a>
+      <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-end">
+          <a class="navbar-item" href="#about">
+            About
+          </a>
+          <a class="navbar-item" href="#resume">
+            Resume
+          </a>
+          <a class="navbar-item" href="#writing">
+            Writing
+          </a>
+          <a class="navbar-item" href="#projects">
+            Projects
+          </a>
+          <a class="navbar-item" href="#contact">
+            Contact
+          </a>
+      </div>
+
+    </div>
+  </nav>
+
+
+  <section class="section section-is-top">
+    <div class="container head-content section-title-content">
+      <div class = "title-section">
+        <h1 style = "font-size: 4rem" class="title text-is-white">
+          Welcome
+        </h1>
+        <hr/>
+        <!--<p class="subtitle text-is-white"></p> -->
+        <a class="button is-info is-large" href = "#about">About Me</a>
+       </div>
+   </div>
+  </section>
+
+
+  <section id = "about" class="section about-section">
+    <div class="container section-content section-title-content">
+      <h1 class="title">
+        About Me
+      </h1>
+      <br/>
+      <div class="columns">
+          <div class="column is-8 is-offset-1">
+            <p class = "is-bio">
+              Hello! My name is Daniel Stambler. I am a Senior at Johns Hopkins University,
+              double majoring in Computer Science and Economics, and minoring in History.
+              I enjoy Web and App development, writing, and going for runs.
+              After graduating college, I hope to work as a software engineer.
+              <br/>
+              <br/>
+              Here you can find my resume, a link to my blog, and a list of all the essays I wrote
+              while in college. In addition, you'll find a short description of my favorite
+              projects that I worked on so far.
+            </p>
+          </div>
+          <div class="column is-4 has-photo-in-center">
+            <figure class="profile-photo">
+              <img src="profilePhoto.jpg">
+            </figure>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id ="resume" class="section" style = "background-image: white">
+    <div class="container section-content section-title-content">
+      <h1 class="title">Work Experiences</h1>
+      <hr/>
+      <a class="button is-large is-rounded" href = "Daniel Stambler CV.pdf" target ="_blank">
+        <span class="icon is-medium">
+          <img src = "resume.jpg"/>
+        </span>
+        <span><strong>Resume</strong></span>
+      </a>
+    </div>
+  </section>
+
+
+  <section id ="writing" class="section writing-section">
+    <div class="container section-content section-title-content">
+      <h1 class="title">
+        Writing
+      </h1>
+      <p class="subtitle is-5">
+        Before getting into Computer Science, I wrote several essays for what I thought would be my History major (now minor).
+        Some papers were for classes. Others were for independent research projects. Although, I haven't been writing papers
+        recently, I decided to open up a blog where I can practice writing on any topic.
+      </p>
+
+      <a class="button is-large is-rounded" title="Blog Coming Soon" disabled>
+        <span class="icon is-medium">
+          <!--<i class="far fa-comments"></i>-->
+          <img src = "thought_bubble_temporary-tattoo.png"/>
+        </span>
+        <span>Blog</span>
+      </a>
+      <a class="button is-large is-rounded" target ="_blank" title="View My past Essays">
+        <span class="icon is-medium">
+          <img src = "scroll.jpg"/>
+        </span>
+        <span>Essays</span>
+      </a>
+    </div>
+  </section>
+
+
+  <section id ="projects" class="section project-section" style = "background-color: #7faef9">
+    <div class="container section-content section-title-content">
+      <h1 class="title">
+        Projects
+      </h1>
+      <p class="subtitle is-5">
+        Listed below is a short description of the projects that I am currently working on.
+        Including a description, technologies used, and planned released time. To see all
+        my completed projects, check out my <a href="https://github.com/dstambler17" target ="_blank" style = "color: white">GitHub</a>.
+      </p>
+
+      <div class="columns">
+          <div class="column is-one-half project-one">
+            <p class="subtitle is-3 text-is-white">Personal Blog</p>
+            <p class = "text-is-left text-is-white"><b>Technologies:</b> Django and mysql for backend. Sass, CSS(Bulma), HTML</p>
+            <p class = "text-is-left text-is-white"><b>Planned Completion Date:</b> July 24th 2018 </p>
+            <p class = "text-is-left text-is-white"><b>Description:</b>
+               Hope to have a blog that is easy to maintain. Also, hope to be able to write about all types of topics.
+               This project is also good practice for full stack web development with Django.
+            </p>
+
+          </div>
+          <div class="column is-one-half project-two">
+            <p class="subtitle is-3 text-has-weight">Danban App</p>
+            <p class = "text-is-left text-is-blue text-has-weight"><b>Technologies:</b> React for Frontend. PostgrSQl to keep data </p>
+            <p class = "text-is-left text-is-blue text-has-weight"><b>Planned Completion Date:</b> July 31st 2018 </p>
+            <p class = "text-is-left text-is-blue text-has-weight"><b>Description:</b>
+               I've been learning React this past summer. So, I hope to use what I've learned to create a personalized
+              task tracker insipred by the agile development process "kanban" (thus the unironic title of Danban).
+              For those who don't know, kanban is a process where developers use a board to track tasks in the backlog, tasks
+              being worked on, and tasks completed. With this project, I hope to create a kanbanish board that I can use to track personal tasks.
+            </p>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id = "contact" class="section" style = "background-color: white">
+    <div class="container section-content section-title-content">
+      <h1 class="title">
+        Contact
+      </h1>
+      <br/>
+
+        <div class="columns">
+          <div class="column is-one-third">
+            <a class="button is-large" href = "mailto:dstambl2@jhu.edu" target ="_blank" title="Send me an Email">
+              <span class="icon is-medium">
+                <i class="fas fa-envelope"></i>
+              </span>
+              <span>Email</span>
+            </a>
+          </div>
+          <div class="column is-one-third">
+            <a class="button is-large" href ="https://github.com/dstambler17" target ="_blank" title="Check out all my projects">
+              <span class="icon is-medium">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>GitHub</span>
+            </a>
+          </div>
+          <div class="column is-one-third">
+            <a class="button is-large" href = "https://www.linkedin.com/in/daniel-s-9b7b44a4/" target ="_blank" title="See past work experiences">
+              <span class="icon is-medium">
+                <i class="fab fa-linkedin"></i>
+              </span>
+              <span>linkedin</span>
+            </a>
+          </div>
+        </div>
+
+   </div>
+  </section>
+
+  <footer style = "background-color: black">
+    <p class = "text-is-center" style = "color: white">&copy; 2018 Daniel Stambler</p>
+  </footer>
+
+
+  </body>
+</html>
