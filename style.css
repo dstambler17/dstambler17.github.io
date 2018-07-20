@@ -26,7 +26,7 @@
 
 /** Deals with Header and Navbar **/
 .section-is-top{
-  background-image: url('view.jpg');
+  background-image: url('images/view.jpg');
 	background-size: cover;
   position: relative;
   min-height: 100%;
@@ -79,8 +79,9 @@ hr{
   }
 }
 
+
 .writing-section{
-  background-image: url("http://www.zingerbug.com/Backgrounds/background_images/light_blue_parchment_paper_wallpaper_texture_seamless.jpg");
+  background-image: url("images/blueparchment.jpg");
   background-size: cover;
   background-position: center;
   min-height: 50%;
@@ -91,12 +92,12 @@ hr{
 }
 
 .project-one{
-  background-image: url("blog.jpg");
+  background-image: url("images/whitewood.jpg");
   background-size: cover;
 }
 
 .project-two{
-  background-image: url("kboard.png");
+  background-image: url("images/graph.png");
   background-size: cover;
   background-position: center;
 }
@@ -127,11 +128,30 @@ hr{
   position: relative;
   height: 256px;
   width: 256px;
+}
 
+@media (max-width:768px){
+  .profile-photo{
+    display: none;
+  }
 }
 
 @media (max-width:768px) {
-  .has-photo-in-center{
-    padding-left: 30%;
+  .about-section{
+      min-height: 50%;
   }
+}
+
+/** Needed to Display photo on mobile
+/**@media (max-width:768px) {
+  .has-photo-in-center{
+    padding-left: 45%;
+  }
+} **/
+
+/** CSS for the Essays page **/
+.section-contains-essays{
+  background-image: url(images/yellow_parchment_paper.jpg);
+  text-align: center;
+  min-height: 100%;
 }
