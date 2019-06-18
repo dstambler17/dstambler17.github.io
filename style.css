@@ -66,8 +66,9 @@ hr{
   background-color: black;
 }
 
-.about-section{
-  background-image: url("https://i2.wp.com/zellox.com/wp-content/uploads/2016/05/website-backgrounds-%E2%80%AB1%E2%80%AC-%E2%80%AB%E2%80%AC.jpg?resize=1920%2C1080");
+.about-section {
+  background-color: #044f70;
+  color: white;
   background-size: cover;
   background-position: center;
   min-height: 100%;
@@ -81,7 +82,9 @@ hr{
 
 
 .writing-section{
-  background-image: url("images/blueparchment.jpg");
+  /**background-image: url("images/blueparchment.jpg");**/
+  background-color: #013f49;
+  color: white;
   background-size: cover;
   background-position: center;
   min-height: 50%;
@@ -123,7 +126,7 @@ hr{
 }
 
 .profile-photo{
-  transform: rotate(270deg);
+  /**transform: rotate(270deg);**/
   display: block;
   position: relative;
   height: 256px;
