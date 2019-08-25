@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link rel = "stylesheet" type = "text/css" href = "style.css"/>
 
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="animation.js"></script>
@@ -15,7 +16,7 @@
   <body>
   <nav class="navbar is-fixed-top is-transparent has-no-background">
     <div class="navbar-brand">
-      <a id ="title" class="navbar-item" href="">
+      <a id ="title" class="navbar-item" href="#">
         <h1 class = "title headingText">Daniel Stambler</h1>
       </a>
       <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
@@ -29,8 +30,8 @@
           <a class="navbar-item" href="#about">
             About
           </a>
-          <a class="navbar-item" href="#resume">
-            Resume
+        <a class="navbar-item" href="#projects">
+            Projects
           </a>
           <a class="navbar-item" href="#writing">
             Blog
@@ -47,8 +48,8 @@
   </nav>
 
 
-  <section class="section section-is-top">
-    <div class="container head-content section-title-content">
+  <div class="section-is-top">
+    <div class="head-content section-title-content">
       <div class = "title-section">
         <h1 style = "font-size: 4rem" class="title text-is-white">
           Welcome
@@ -58,11 +59,10 @@
         <a class="button is-info is-large" href = "#about">About Me</a>
        </div>
    </div>
-  </section>
+ </div>
 
 
-  <section id = "about" class="section about-section">
-    <div class="container section-content section-title-content">
+    <div id = "about" class="about-section section-title-content">
       <h1 class="title" style="color: white">
         Get to know me
       </h1>
@@ -78,9 +78,8 @@
               Natural language processing. Outside of coding, I enjoy hiking, going for runs, and podcasting.
               <br/>
               <br/>
-              Here you can find my resume, a link to the website/blog for my podcast "Implementation",
+              Here you can find a description of my work and personal projects, a link to my portfolio, and a link to the website/blog for my podcast "Implementation",
               where I interview friends about the challenges that they faced when turning an idea into a reality.
-              I am also including a link to some of the essays I wrote for my humanities/social science classes while in college.
             </p>
           </div>
           <div class="column is-4 has-photo-in-center">
@@ -90,33 +89,32 @@
           </div>
       </div>
     </div>
-  </section>
 
 
-  <section id ="resume" class="section" style = "background-image: white">
-    <div class="container section-content section-title-content">
-      <h1 class="title">Work Experiences</h1>
-      <hr/>
+    <div id ="projects" class="project-section section-title-content" style = "background-image: white">
+      <h1 class="title">Projects</h1>
+      <p class="subtitle is-5" style= "color:black">
+        I consider myself to be a fullstack web developer, with experience in React for Frontend and Django/Flask for backend. I am also proficient in Java and C++.
+        Below is a link to my portfolio site, where you can checkout all of the webapps that I built, and other technical
+        projects that I've worked on (mostly in python).
+      </p>
       <a class="button is-large is-rounded" href = "Daniel Stambler CV.pdf" target ="_blank">
         <span class="icon is-medium">
-          <img src = "images/resume.jpg"/>
+          <img src = "images/folder.jpg"/>
         </span>
-        <span><strong>Resume</strong></span>
+        <span><strong>Portfolio</strong></span>
       </a>
     </div>
-  </section>
 
 
-  <section id ="writing" class="section writing-section">
-    <div class="container section-content section-title-content">
+    <div id ="writing" class="writing-section section-title-content">
       <h1 class="title" style= "color:white">
-        Implementation
+        Implementation Blog
       </h1>
       <p class="subtitle is-5" style= "color:white">
         "Implementation" is a Blog/Website for my podcast series where I interview people
         about how they turned some idea in their head into a reality. These ideas can range from
-        starting technology ventures, to planning a garage sale. I am also going to leave a link to
-        some of the essays that I wrote in college.
+        starting technology ventures, to planning a garage sale.
       </p>
 
       <a class="button is-large is-rounded" title="Blog Coming Soon" disabled>
@@ -126,55 +124,18 @@
         </span>
         <span>Blog</span>
       </a>
-      <a class="button is-large is-rounded"  href = "Essays.html" target ="_blank" title="View My past Essay.">
+      <!--<a class="button is-large is-rounded"  href = "Essays.html" target ="_blank" title="View My past Essay.">
         <span class="icon is-medium">
           <img src = "images/scroll.jpg"/>
         </span>
         <span>Essays</span>
-      </a>
+      </a> -->
     </div>
-  </section>
 
 
-  <!--<section id ="projects" class="section project-section" style = "background-color: #7faef9">
-    <div class="container section-content section-title-content">
-      <h1 class="title">
-        Projects
-      </h1>
-      <p class="subtitle is-5">
-        Listed below is a short description of the projects that I am currently working on.
-        Including a description, technologies used, and planned released time. To see all
-        my completed projects, check out my <a href="https://github.com/dstambler17" target ="_blank" style = "color: white">GitHub</a>.
-      </p>
 
-      <div class="columns">
-          <div class="column is-one-half project-one">
-            <p class="subtitle is-3 text-has-weight">Personal Blog</p>
-            <p class = "text-is-left"><b>Technologies:</b> Django and mysql for backend. Sass, CSS(Bulma), HTML</p>
-            <p class = "text-is-left"><b>Description:</b>
-               Hope to have a blog that is easy to maintain. Also, hope to be able to write about all types of topics.
-               This project is also good practice for full stack web development with Django.
-            </p>
-
-          </div>
-          <div class="column is-one-half project-two">
-            <p class="subtitle is-3 text-has-weight">Danban App</p>
-            <p class = "text-is-left"><b>Technologies:</b> React for Frontend. PostgrSQl to keep data </p>
-            <p class = "text-is-left"><b>Description:</b>
-               I've been learning React this past summer. So, I hope to use what I've learned to create a personalized
-              task tracker insipred by the agile development process "kanban" (thus the unironic title of Danban).
-              For those who don't know, kanban is a process where developers use a board to track tasks in the backlog, tasks
-              being worked on, and tasks completed. With this project, I hope to create a kanbanish board that I can use to track personal tasks.
-            </p>
-          </div>
-      </div>
-
-    </div>
-  </section> -->
-
-
-  <section id = "contact" class="section" style = "background-color: white">
-    <div class="container section-content section-title-content">
+  <section>
+    <div id = "contact" class="contact-section section-title-content">
       <h1 class="title">
         Contact
       </h1>
@@ -213,7 +174,5 @@
   <footer style = "background-color: black">
     <p class = "text-is-center" style = "color: white">&copy; 2019 Daniel Stambler</p>
   </footer>
-
-
   </body>
 </html>

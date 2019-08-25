@@ -26,11 +26,30 @@
 
 /** Deals with Header and Navbar **/
 .section-is-top{
-  background-image: url('images/view.jpg');
+  position: absolute;
+  background-image: url('images/viewTwo.png');
 	background-size: cover;
   position: relative;
-  min-height: 100%;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  padding: 3rem 1.5rem;
 }
+
+/*.section-is-top::before{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   content: '';
+   background: inherit;
+   z-index: -1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   transform-origin: top right;
+   transform: skewY(-2deg);
+ }*/
 
 .head-content{
   margin-top: 18%;
@@ -54,10 +73,10 @@ hr{
   }
 }
 
-
-/** Deals with style of sections **/
-.section-content{
+body{
+  height: 100vh;
 }
+
 
 .small-div{
   max-width: 10%;
@@ -67,12 +86,55 @@ hr{
 }
 
 .about-section {
+  display: flex;
+  flex-direction: column;
   background-color: #044f70;
   color: white;
+  width: 100%;
+  padding: 3rem 1.5rem;
   background-size: cover;
   background-position: center;
-  min-height: 100%;
+  min-height: 100vh;
 }
+
+.about-section:after{
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   content: '';
+   background: inherit;
+   z-index: -1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   transform-origin: top left;
+   transform: skewY(2deg);
+ }
+
+ .project-section{
+   width: 100%;
+   z-index: 0;
+   padding: 3rem 1.5rem;
+   min-height: 50%;
+ }
+
+ /*.project-section:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: white;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(4deg);
+  } */
+
+
 
 @media (min-width:992px) {
   .about-section{
@@ -88,11 +150,47 @@ hr{
   background-size: cover;
   background-position: center;
   min-height: 50%;
+  width: 100%;
+  z-index: 0;
+  padding: 3rem 1.5rem;
 }
 
-.project-section{
-  min-height: 50%;
+.writing-section:after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: bottom left;
+  transform: skewY(-2deg);
 }
+
+.contact-section{
+  width: 100%;
+  z-index: 0;
+  padding: 3rem 1.5rem;
+}
+
+.contact-section:after{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background: white;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform-origin: top right;
+  transform: skewY(2deg);
+}
+
 
 .project-one{
   background-image: url("images/whitewood.jpg");

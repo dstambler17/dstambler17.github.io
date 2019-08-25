@@ -23,22 +23,10 @@ $(document).ready(function() {
   });
 });
 
-$(document).ready(function (){
-            $("title").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#div1").offset().top
-                }, 2000);
-            });
-        });
+const scroll = new SmoothScroll('.navbar a[href*="#"]', {
+  speed: 500
+});
 
-$document.ready(function(){
-  $('a[href^="#"]').on('click', function(event) {
-    var target = $(this.getAttribute('href'));
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
-    }
-  });
+const scrollTwo = new SmoothScroll('.section-is-top a[href*="#about"]', {
+  speed: 500
 });
